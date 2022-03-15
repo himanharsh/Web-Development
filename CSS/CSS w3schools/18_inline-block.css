@@ -1,0 +1,41 @@
+span.a {
+  display: inline; /* the default for span */
+  /* doesn't allow to set width and height of an element */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+  
+span.b {
+  display: inline-block; 
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+span.c {
+  display: block; /* adds a line break after the element */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+.nav{
+  background-color: yellow; 
+  list-style-type: none; /* to remove default bullets */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li{
+    display: inline-block; /* to display the list items in the same line */
+    font-size: 20px;
+    padding: 20px;
+}

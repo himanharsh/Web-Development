@@ -1,0 +1,57 @@
+body{
+    font-family: Sofia;
+    font-size: 1vw; /* viewport width */
+}
+/* Arial is the most widely used font for both online and printed media. */
+/* Before you publish your website, always check how your fonts appear on different browsers and devices,
+and always use fallback fonts! */
+.one{
+    text-align: center;
+}
+
+.two{
+    width: 460px;
+    padding: 30px;
+    margin: 39px;
+    border: 3px dashed purple;
+    text-align: justify;
+    background-color: sandybrown;
+    outline: 6px dotted lime;
+}
+
+.three{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+} /* bdo tag of html is more convenient*/
+
+img.a{
+    vertical-align: text-top; /* I don't know why it isn't working. Well it doesn't really matter.*/
+}
+
+h2{
+    text-decoration: overline;
+}
+h3{
+    text-decoration: line-through;
+}
+h4{
+    text-decoration: underline;
+    /* It is not recommended to underline text that is not a link, as this often confuses the reader. */
+}
+
+.ind{
+    text-indent: 50px;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    line-height: 30px;
+}
+
+.shadow{
+    color: blue;
+    text-shadow: 3px 3px 6px magenta; /* horizontal, vertical, blur*/
+}
+
+.bo{
+    font-weight: bold;
+    font-style: italic;
+}

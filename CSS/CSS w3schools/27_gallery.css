@@ -1,0 +1,20 @@
+div.gallery{
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    /* width: 180px; */
+}
+
+div.gallery:hover{
+    /* border disturbs the layout (increses total size)*/
+    outline: 5px solid magenta; /* outline doesn't disturb the layout (learnt from Twitter) */
+}
+
+div.desc{
+    padding: 2px;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    background-color: rgb(226, 166, 86);
+    margin-top: -4px;
+}

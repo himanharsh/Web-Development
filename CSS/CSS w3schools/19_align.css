@@ -1,0 +1,72 @@
+.center{
+    margin: auto;
+    width: 50%;
+    /* Center aligning has no effect if the width property is not set (or set to 100%). */
+    border: 3px solid gray;
+    padding: 15px;
+    font-size: large;
+}
+
+.tcenter{
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    text-align: center;
+    font-size: large;
+}
+
+img{
+    display: block; /* for applying margin effects */
+    margin: auto;
+    /* or margin-left and margin-right */
+}
+
+.right{
+    position: absolute; /* no ancestor, so wrt the whole page */
+    right: 5px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.fright{
+    float: right;
+    width: 300px;
+    border:3px solid hotpink;
+    padding: 10px;
+}
+
+.img1 {
+    float: right;
+}
+  
+.img2 {
+    float: right;
+}
+
+.wclear{
+    border: 3px solid red;
+    padding: 5px;
+    width: 75%;
+}
+
+.clearfix{
+    border: 3px solid red;
+    padding: 5px;
+    width: 75%;
+}
+
+/* more preferred method than overflow: auto */
+.clearfix::after{ 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pcenter{
+    padding: 60px 0; /* top & bottom, left & right */
+    border: 3px solid blue;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

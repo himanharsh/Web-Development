@@ -1,0 +1,32 @@
+body{
+    background-image: url(media_css/neon\ bg.jpg);
+    background-size: cover; /*to fit to the screen*/
+    /* background-repeat: repeat-y; */
+    /* By default, the background-image property repeats an image both horizontally and vertically. */
+    /* background-repeat: no-repeat; 
+    background-position: right top; */ /*used along with no-repeat to change the position of the image*/
+}
+
+.don{
+    outline: 2px solid rgb(14, 207, 221);
+    /* border shifts the layout, while outline doesn't */
+}
+
+h1{
+    font-family: Verdana;
+    font-size: 55px;
+    /* text-align: center; */
+    color: rgb(115, 255, 0);
+}
+
+h1.heading{
+    font-family: verdana;
+    font-size: 45px;
+    color: red;
+}
+
+p{
+    font-family: cursive;
+    color: aqua;
+    font-size: 21px;
+}

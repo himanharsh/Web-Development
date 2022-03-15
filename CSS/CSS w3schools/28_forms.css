@@ -1,0 +1,67 @@
+body{
+    background: #e9e8e8;
+}
+
+div.form1{
+    font-family: monospace;
+    font-size: large;
+    margin: 55px 100px 10px 100px;
+    padding: 20px;
+    background-color: rgb(233, 232, 232);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 25px 25px 55px #bebebe,
+             -25px -25px 50px #ffffff;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box; /* otherwise the width might cross the div bcoz of padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0px; /* same distance from left and right (0 here)*/
+    /* display: inline-block; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(media_css/icons8-person-48.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 40px; /* so that text doesn't overlap image */
+}
+
+select{
+    background-image: url(media_css/icons8-country-48.png);
+    background-position: 0px 1px; /* left, top*/
+    padding-left: 45px;
+}
+
+#about{
+    background-color: white;
+    height: 120px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    resize: none; /* textarea tag has resize be default */
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+    padding: 14px 20px;
+    margin: 8px 0; /* same distance from left and right (0 here)*/
+    border: none; /* necessary to specify otherwise border-radius will distort the border */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #439945;
+}
+
+input[type=text]:focus { /* when clicked on */
+    background-color: rgb(219, 239, 245);
+}

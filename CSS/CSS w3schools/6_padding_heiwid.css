@@ -1,0 +1,33 @@
+body{
+    font-family: verdana;
+}
+
+div.ex1{
+    border: 2px solid red;
+    padding: 25px 50px 40px;
+    background-color: lightskyblue;
+}
+
+div.ex2{
+    border: 1px solid green;
+    width: 300px;
+    background-color: cyan;
+}
+/* If an element has a specified width, the padding added to that element will be added to the
+total width of the element. This is often an undesirable result.
+To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property.
+If you increase the padding, the available content space will decrease. */
+div.ex3{
+    border: 2px solid purple;
+    background-color: salmon;
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+div.ex4{
+    border: 2px solid magenta;
+    background-color: powderblue;
+    height: 200px;
+    width: 25%;
+}

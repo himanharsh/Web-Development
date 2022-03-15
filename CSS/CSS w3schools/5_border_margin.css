@@ -1,0 +1,85 @@
+.one{
+    font-size: 1vw;
+    /* The most responsive size setter is vw, which adjusts with the screen size. */
+    font-family: verdana;
+    /* shorthand technique */
+    border: 2px solid blue;
+    background-color: lightgrey;
+}
+
+.two{
+    font-size: large;
+    font-family: verdana;
+    border-bottom: 3px dotted red;
+    background-color: lightpink;
+}
+
+.three{
+    font-size: large;
+    font-family: lucida sans;
+    border-style: ridge;
+    border-width: 4px 3px 5px 3px; /* top right bottom left */
+    border-color: purple;
+    background-color: lightskyblue;
+}
+
+.four{
+    font-size: large;
+    font-family: cursive;
+    border-style: solid;
+    border-color: magenta brown cyan navy; /* top right bottom left */
+    border-width: medium;
+}
+
+.five{
+    font-size: large;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-color: olive red teal red;
+    border-width: thick;
+}
+
+.six{
+    border: 2px solid darkgreen;
+    font-size: large;
+    border-radius: 5px; /* more radius, more rounded border*/
+}
+
+.seven{
+    /* by default, the body margin of a webpage is 8px, which can be set to 0 in body container*/
+    font-size: large;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 150px;
+    background-color: lightblue;
+}
+
+.eight{
+    font-size: large;
+    font-family: cursive;
+    background-color: lightslategray;
+    font-size: large;
+}
+
+.nine{
+    font-family: cursive;
+    font-size: large;
+    /* Shorthand property */
+    margin: 25px 39px 18px 98px; /* top right bottom left */
+    background-color: lime;
+}
+/* Top and bottom margins of elements are sometimes collapsed into a single margin that is equal
+to the largest of the two margins. */
+.ten{
+    font-size: large;
+    font-family: cursive;
+    margin: auto; /* horizontally centered with width*/
+    width: 150px;
+    /* margin: 20px 300px;*/ /* top and bottom, left and right*/
+    /* margin: 25px 50px 75px; */ /* top, right and left, bottom */
+    /* margin: 25px; */ /* all four */
+    background-color: magenta;
+}

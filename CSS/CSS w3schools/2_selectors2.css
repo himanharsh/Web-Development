@@ -1,0 +1,16 @@
+/*The most important concept of designing a website is to create div with class/id,
+and style each and every element of that class.
+Syntax: .class/#id attribute{ styles; }*/
+
+h1,h2,p{
+    color: cyan;
+    background-color: darkblue;
+    font-family: sans-serif;
+} 
+
+body{
+    background-color: lightgreen;
+}
+/* If some properties have been defined for the same selector (element) in different style sheets, the value
+from the last read style sheet will be used. */
+/* it will affect every h1,h2 and p irrespective of their class */

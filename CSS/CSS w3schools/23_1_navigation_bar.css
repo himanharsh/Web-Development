@@ -1,0 +1,37 @@
+ul.vertical{
+    list-style-type: none; /* to remove bullets */
+    margin: 0; /* to remove default margin */
+    padding: 0; /* to remove default padding */
+    width: 200px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+}
+
+.vertical a{
+    /* display: block; - Displaying the links as block elements makes the whole link area clickable
+    (not just the text), and it allows us to specify the width (and padding, margin, height, etc.). */
+    display: block;
+    padding: 8px 16px; /* top & bottom, right & left */
+    text-decoration: none; /* to remove default underline from links */
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.active{
+    color: white;
+    background-color: rgb(7, 126, 7);
+}
+
+.vertical li{
+    border-bottom: 1px solid black; /* only bottom border to avoid double borders */
+}
+.vertical li:last-child{
+    border-bottom: none; /* to remove double border from last element of li of vertical class */ 
+}
+
+.vertical a:hover:not(.active){ /* hover effects applied to all a's of vertical except active class' a*/
+    /* when any tag is hovered that doesn't have active class it should run the code below. */
+    color: white;
+    background-color: #555;
+}
+

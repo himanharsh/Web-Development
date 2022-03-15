@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="1_selectors1.css">
+    <!-- <link rel="stylesheet" href="2_selectors2.css"> -->
+</head>
+<body>
+    <!-- * is universal selector in CSS -->
+    <!-- A class name cannot start with a number! -->
+    <div id="first">
+        <h1>Welcome to CSS</h1>
+        <h2>Hello there! This is my first css page.</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae doloremque voluptas placeat, 
+           tenetur, modi alias error at eligendi recusandae quidem ullam harum, reiciendis iste ipsum.
+           Error sit, sed aliquid beatae at ducimus?</p>
+    </div>
+    <!-- If some properties have been defined for the same selector (element) in different style sheets, the value
+    from the last read style sheet will be used.  -->
+    <div class="city">
+        <h1>New Delhi</h1>
+        <h3>New Delhi is the capital of India.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ab voluptate, sunt eligendi
+           laborum quaerat omnis provident. Totam perferendis dolor fuga necessitatibus magnam numquam
+           nesciunt harum quasi modi, dolorum corporis!</p>
+    </div>
+    <hr>
+    <p class="center">This paragraph will be red and center-aligned.</p>
+    <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+    <br>
+    <h1 class="next">This heading will not be affected</h1>
+    <p class="next">This paragraph will be light green and center-aligned with crimson background.</p>
+    <br><br>
+    <h1>Hello World!</h1>
+    <h2>Smaller heading!</h2>
+    <p>This is a paragraph.</p>
+</body>
+</html>

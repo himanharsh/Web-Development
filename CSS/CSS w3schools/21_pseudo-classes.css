@@ -1,0 +1,81 @@
+/* a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!
+a:active MUST come after a:hover in the CSS definition in order to be effective!
+Pseudo-class names are not case-sensitive. */
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: lime;
+}
+
+a:hover{
+    color: magenta;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+a:active{
+    color: black;
+}
+
+.hover:hover{
+    color: hotpink;
+    font-size: large;
+}
+
+#divhover{
+    background-color: green;
+    width: 60%;
+    margin: auto;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: larger;
+}
+
+#divhover:hover{
+    background-color: lime;
+}
+
+.tooltip p{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.tooltip:hover p{ /* p is a descendant of tooltip class and the effects are applied only to p */
+    display: block;
+}
+
+p.first::first-line{
+    color: orangered;
+    font-variant: small-caps; /* capitalizes the content */
+    font-size: large;
+}
+p.first::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+p.first::before{
+    /* content is used with before and after to add some content */
+    content: url(media_css/icons8-bookmark-16.png);
+}
+p.first::after{
+    content: url(media_css/icons8-html-5-50.png);
+}
+
+/* The ::marker pseudo-element selects the markers of list items. */
+::marker{
+    color: orange;
+    font-size: x-large;
+}
+
+/* The ::selection pseudo-element matches the portion of an element that is selected by a user.
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline. */
+::selection{
+    color: red;
+    background-color: yellow;
+}

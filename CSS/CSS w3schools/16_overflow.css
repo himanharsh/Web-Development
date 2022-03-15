@@ -1,0 +1,21 @@
+.visible{
+    overflow: visible;
+    background-color: rgb(230, 223, 223);
+    width: 15%;
+    height: 40px;
+    margin: 20px;
+}
+
+.hidden{
+    overflow: hidden;
+    width: 15%;
+    height: 40px;
+    background-color: rgb(203, 250, 250);
+}
+
+.scroll{
+    /* overflow: scroll; */ /* in both the axes scroll bar appears */
+    overflow-y: scroll; /* only enabled in y-axis */
+    width: 35%;
+    height: 90px;
+}

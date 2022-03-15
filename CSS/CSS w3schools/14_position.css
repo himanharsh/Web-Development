@@ -1,0 +1,69 @@
+/* HTML elements are positioned static by default.
+Static positioned elements are not affected by the top, bottom, left, and right properties. */
+
+/* relative shifts wrt its own position relative to the page, not wrt absolute page (like moving a game
+character */
+/* like if we shift a bordered text left: 50px, the whole element shifts 50px away from left from its
+relative position but not from the absolute right side of the page */
+
+.relative p{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border: 3px solid blue;
+}
+
+div.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid green;
+}
+
+div.relative1 {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } 
+/* absolute is used with relative */ 
+/* However; if an absolute positioned element has no positioned ancestors, it uses the document body, i.e.,
+it considers the whole page as the relative body*/
+div.absolute {
+  position: absolute;
+  top: 50px; /* - is also used for going outside relative */
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid red;
+}
+
+div.sticky{
+  position: -webkit-sticky; /* for apple devices */
+  position: sticky;
+  top: 0;
+  background-color: rgb(135, 245, 135);
+  width: 500px;
+  border: 2px solid green;
+  padding: 3px;
+}
+
+img{
+  width: 100%; /* full screen width coverage */
+  opacity: 0.4;
+}
+
+.container{
+  position: relative;
+}
+
+.topleft{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 20px;
+  /* for center position */
+  /* top: 50%;
+  width: 100%;
+  text-align: center; */
+}

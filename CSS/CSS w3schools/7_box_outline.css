@@ -1,0 +1,27 @@
+body{
+    font-family: Sofia;
+}
+/* Arial is the most widely used font for both online and printed media. */
+/* Before you publish your website, always check how your fonts appear on different browsers and devices,
+and always use fallback fonts! */
+.box{
+    width: 350px;   
+    padding: 50px;
+    border: 15px ridge red;
+    margin: 50px 512px 40px;
+    background-color: greenyellow;
+    font-size: large;
+    /* outline is mostly used outside border */
+    outline: 10px dashed magenta;
+    outline-offset: 3px; /* space between outline and border*/
+}
+
+.out{
+    outline: 7px solid red;
+    width: 20%;
+}
+
+.bor{
+    border: 7px solid red;
+    width: 20%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table style="border: 1px solid black; width: 75%;">
+        <!-- The <caption> tag should be inserted immediately after the <table> tag. -->
+        <caption>Country and Capitals</caption>
+        <colgroup>
+        <col span="1">
+        <col span="1" style="background-color: chartreuse;">
+        </colgroup>
+        <tr>
+            <!-- using css is better and time saving -->
+          <th style="border: 1px solid black; width: 55%;">Country</th> 
+          <th style="border: 1px solid black; width: 30%;">Capital</th>
+        </tr>
+        <tr style="height: 100px;">
+          <td style="border: 1px solid blue;">India</td>
+          <td style="border: 1px solid blue;">New Delhi</td>
+        </tr>
+        <tr>
+          <td>Pakistan</td>
+          <td>Islamabad</td>
+        </tr>
+        <tr>
+          <td>Nepal</td>
+          <td>Kathmandu</td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>Beijing</td>
+        </tr>
+        <tr>
+          <td>Russia</td>
+          <td>Moscow</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>Berlin</td>
+        </tr>
+    </table>
+    <p>This is an example of column merging</p>
+    <table style="width: 75%;">
+      <colgroup>
+      <col span="2" style="background-color: aquamarine;">
+      <col span="1" style="background-color: burlywood;">
+      </colgroup>
+        <tr>
+            <th colspan="2" style="border: 1px solid black;">Name</th>
+            <th style="border: 1px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Jill</td>
+            <td style="border: 1px solid black;">Smith</td>
+            <td style="border: 1px solid black;">50</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Eve</td>
+            <td style="border: 1px solid black;">Jackson</td>
+            <td style="border: 1px solid black;">94</td>
+        </tr>
+    </table>
+    <p>This is an example of row merging</p>
+    <table style="width: 70%;">
+        <tr>
+          <th style="border: 1px solid red;">Name</th>
+          <td style="border: 1px solid red;">Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2" style="border: 1px solid red;">Phone</th>
+          <td style="border: 1px solid red;">555-1234</td>
+        </tr>
+        <tr>
+          <!-- only one row(td) required since we already have 'Phone' row -->
+          <td style="border: 1px solid red;">555-8745</td>
+      </tr>
+      </table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* The descendant selector matches all elements that are descendants of a specified element. */
+.descendant p{
+    background-color: cyan;
+}
+
+/* The child selector selects all elements that are the children of a specified element. */
+.child > p{
+    background-color: yellow;
+}
+
+/* The adjacent sibling selector is used to select an element that is directly after another specific element.
+Sibling elements must have the same parent element, and "adjacent" means "immediately following". */
+.adsibling + p{
+    background-color: yellowgreen;
+}
+
+/* The general sibling selector selects all elements that are next siblings of a specified element. */
+.gesibling ~ p{
+    background-color: lime;
+}

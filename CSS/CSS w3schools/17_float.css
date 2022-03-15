@@ -1,0 +1,103 @@
+img.right{
+    margin-right: 15px;
+    float: right;
+}
+
+img.left{
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    /* float: none; */
+}
+
+/* div{
+    float: left;
+    padding: 15px;
+} */
+
+.one{
+    background-color: orangered;
+    float: left;
+    padding: 10px;
+}
+
+.two{
+    background-color: aqua;
+    float: left;
+    padding: 10px;
+}
+
+.three{
+    background-color: green;
+    float: left;
+    padding: 10px;
+}
+
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+.clear_left{
+    clear: left;
+}
+
+div.tiger1, div.clearfix{
+  border: 1px solid #4CAF50;
+  padding: 5px;
+  width: 75%;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.box{
+  box-sizing: border-box;
+  /* The box-sizing property allows us to include the padding and border in the box's total width
+  (and height), making sure that the padding stays inside of the box and that it does not break. */
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+/* more commonly used than overflow: auto */
+.clearfix1::after { 
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-container {
+  /* box-sizing property makes sure that the image container doesn't break due to extra padding. */
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}

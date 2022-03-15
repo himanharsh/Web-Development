@@ -1,0 +1,25 @@
+li{
+    display: inline;
+}
+
+span{
+    display: block;
+}
+
+.hidden{
+    display: none;
+/* visibility:hidden; also hides an element.
+However, the element will still take up the same space as before. */
+}
+
+.ex1{
+    width: 500px;
+    margin: auto; /* centrally aligned*/
+    border: 3px solid green;
+}
+
+.ex2{
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid green;
+}

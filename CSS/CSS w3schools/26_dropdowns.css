@@ -1,0 +1,98 @@
+.dropdown{
+    position: relative;
+    display: inline; /* only makes the text area an element not the entire width of that line*/
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #eee;
+    padding: 2px;
+    /* in rgba, the fourth parameter is opacity */
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.15);
+    /* h-offset	- The horizontal offset of the shadow. + value -> right, - value -> left	
+    v-offset - The vertical offset of the shadow. + value -> bottom, - value -> top	
+    blur - Optional	
+    spread - Optional. The spread radius. A positive value increases the size of the shadow, a negative
+    value decreases the size of the shadow	 */
+    /* color - Optional. The color of the shadow. The default value is the text color. */
+}
+
+.dropdown:hover .dropdown-content{
+    display: block; /* displays hidden content in the next line */
+}
+
+.dropmenu{
+    position: relative;
+    float: right;
+    display: inline;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /* pointer cursor makes it look like a link */
+}
+
+.dropmenu-content {
+    display: none;
+    position: absolute;
+    /* right 0 wrt relative dropmenu class */
+    right: 0; /* Without this, the content width will go beyond the right end of the screen */
+    background-color: #f1f1f1;
+    min-width: 160px; /* min width even if content is smaller */
+    box-shadow: -5px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropmenu-content a{
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block; /* so that each link appears on next line */
+}
+
+.dropmenu-content a:hover {
+    background-color: #f7dede;
+}
+
+.dropmenu:hover .dropbtn {
+    /* dropbtn is a child class of dropmenu class */
+    /* this effect remains throughout the hovering of dropmenu div element including links */
+    background-color: #318132;
+}
+
+.dropmenu:hover .dropmenu-content{ 
+    /* dropmenu-content is a child class of dropmenu, so we can't use .dropbtn:hover */
+    display: block;
+}
+
+.dropimg{
+    position: relative;
+    margin-left: 15px;
+    display: inline;
+}
+
+.dropimg-content{
+    position: absolute;
+    left: 0; /* position towards leftmost part of relative dropimg class */
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropimg:hover .dropimg-content{
+    display: block;
+}
+
+.desc{
+    font-family: monospace;
+    font-size: x-large;
+    text-align: center;
+    background-color: burlywood;
+    margin-top: -4px; /* negative value to extend outwards and cover the space between image and text */
+}

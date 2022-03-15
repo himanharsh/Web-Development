@@ -1,0 +1,65 @@
+/*The most important concept of designing a website is to create div with class/id,
+and style each and every element of that class.
+Syntax: .class/#id tag{ styles; }*/
+
+/* '*' is universal selector */
+
+/* we can use many class and attributes at the same time separated by commas
+Syntax: .class(with/without tag), tag, etc */
+
+body{
+    background-color: rgba(70, 245, 245,0.3);
+    /* opacity: 0.4; */ 
+    /* all of its (opacity) child elements inherit the same transparency.
+       When set to a bgcolour, it affects the whole page. So it is not recommended.
+       Best way to use opacity is to use rgba where the fourth parameter is opacity
+       in range of 0 to 1 */
+}
+/* If some properties have been defined for the same selector (element) in different style sheets, the value
+from the last read style sheet will be used. */
+#first{
+    text-align: center;
+    color: rgb(22, 68, 22);
+    font-family: verdana;
+    background-color: rgb(240, 155, 248);
+}
+
+
+/* we can style each element of a class or a id by giving a space after .class/#id 
+Syntax:  .class/#id attribute*/
+.city h1{
+    color: rgb(61, 61, 241);
+    font-family: verdana;
+    background-color: antiquewhite;
+}
+
+.city h3{
+    color: hotpink;
+    background-color: yellow;
+}
+
+.city p{
+    font-family: verdana;
+    color: green;
+    background-color: lime;
+}
+
+.center{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    background-color: black;
+    font-family: monospace;
+}
+
+.large{
+    font-size: 50px;
+    font-family: cursive;
+}
+
+p.next{
+    font-family: verdana;
+    color: chartreuse;
+    text-align: center;
+    background-color: crimson;
+}

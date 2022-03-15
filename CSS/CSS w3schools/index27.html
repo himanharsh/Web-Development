@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index27</title>
+    <link rel="stylesheet" href="28_forms.css">
+</head>
+<body>
+    <div class="form1">
+    <form>
+        <!-- The name attribute of input is used to reference elements in a JavaScript, or to reference form
+        data after a form is submitted. -->
+        <label for="fname">First Name <br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required></label>
+        <br>
+        <label for="lname">Last Name <br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your surname..." required></label>
+        <br>
+        <label for="country">Country <br>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="nepal">Nepal</option> 
+            <option value="pakistan">Pakistan</option>
+        </select>
+        </label>
+        <br>
+        <!-- input text large area is difficult to align properly -->
+        <label for="about">About</label>
+        <!-- The <textarea> tag defines a multi-line text input control.
+        The <textarea> element is often used in a form, to collect user inputs like comments or reviews. -->
+        <textarea id="about" name="about" placeholder="Type something about yourself..."></textarea>
+        <input type="submit" value="Submit"> <!-- value here is the text displayed on the screen -->
+    </form>
+    </div>
+</body>
+</html>

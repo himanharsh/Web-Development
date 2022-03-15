@@ -1,0 +1,49 @@
+/* a:hover MUST come after a:link and a:visited */
+/* a:active MUST come after a:hover */
+a.one:link, a.one:visited{
+    color: cyan;
+    background-color: red;
+    font-family: verdana;
+    text-align: center;
+    /* margin: 50px 50px 300px; */
+    padding: 10px;
+    border: 3px dashed blue;
+    /* outline: 4px solid yellowgreen; */
+    text-decoration: none;
+}
+
+a.one:hover{
+    color: yellow;
+    text-decoration: underline;
+    background-color: purple;
+    /* outline: 4px solid black; */
+}
+
+a.one:active{
+    color: darkmagenta;
+}
+
+a.big:link, a.big:visited{
+    color: lime;
+    /* margin: 200px 50px 300px ; */
+    /* padding: 10px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    /* background-color: darkslategray; */
+    /* border: 3px solid black; */
+    /* outline: 4px dotted magenta; */
+}
+
+a.big:hover, a.big:active{
+    color: lime;
+    /* background-color: darkslategray; */
+    /* border: 3px solid black; */
+    /* outline: 4px dashed magenta; */
+    text-decoration: none;
+    font-size: large;
+}
+
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkmagenta;
+}

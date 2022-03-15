@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index21</title>
+    <link rel="stylesheet" href="22_opacity.css">
+</head>
+<body>
+    <h1>Image Transparency</h1>
+    <p>The opacity property is often used together with the :hover selector to change the opacity on
+    mouse-over:</p>
+
+    <img src="media_css/henrique-ferreira-RKsLQoSnuTc-unsplash.jpg" width="270px" height="180px">
+    <img src="media_css/lachlan-gowen-frx-gt8La2E-unsplash.jpg" width="270px" height="180px">
+    <img src="media_css/giuseppe-mondi-xyE1p1rG04U-unsplash.jpg" width="270px" height="180px">
+
+    <h1>Transparent Box</h1>
+    <p>When using the opacity property to add transparency to the background of an element, all of its
+    child elements become transparent as well. This can make the text inside a fully transparent element
+    hard to read:</p>
+
+    <div class="first"><p>opacity 0.2</p></div>
+    <div class="second"><p>opacity 0.4</p></div>
+    <div class="third"><p>opacity 0.6</p></div>
+    <div><p>opacity 1 (default)</p></div>
+    </div>
+
+    <div class="background"> <!-- transbox is inside this div -->
+        <div class="transbox">
+            This is some text in the transparent box.
+        </div>
+    </div>
+</body>
+</html>

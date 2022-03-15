@@ -1,0 +1,116 @@
+/*The most important concept of designing a website is to create div with class/id,
+and style each and every element of that class.
+Syntax: .class/#id attribute{ styles; }*/
+
+.a th{
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.a td{
+    font-family: cursive;
+    font-size: large;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: bottom;
+    height: 50px;
+}
+.a tr:hover{
+    background-color: aqua;
+}
+
+.a{
+    border-collapse: collapse;
+    margin: 10px 60px 10px;
+    width: 70%;
+    height: 30px;
+}
+
+.a caption{
+    color: red;
+    font-size: 40px;
+}
+span{
+    color: lime;
+    font-style: italic;
+}
+.b caption{
+    caption-side: bottom;
+    color: blue;
+    font-size: 30px;
+}
+
+.b{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+    margin: 10px 60px 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.b th, .b td{
+    border: 1px solid black;
+    padding: 5px;
+    width: 155px; /* width in % makes spacing unequal*/
+    height: 35px;
+}
+
+.c{
+    margin: 10px 60px 10px;
+}
+
+.c th, .c td{
+    /* border-bottom: 1px solid lime; */
+    font-family: cursive;
+    width: 150px;
+}
+
+.b td:hover{
+    background-color: magenta;
+}
+
+.c tr:hover{
+    background-color: hotpink;
+}
+
+.c tr:nth-child(even){
+    background-color: #c3c3c3;
+}
+
+.d th, .d td{
+    font-size: large;
+    width: 150px;
+    text-align: left;
+    padding: 8px;
+    font-family: monospace;
+}
+
+.d{
+    width: 100%;
+    /* overflow-x: auto; */ /* it's enabled by default too in chrome and brave*/
+}
+
+.d tr:nth-child(even){
+    background-color: #b2b2b2;
+}
+
+#customers{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    }
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:hover {background-color: rgba(211, 211, 211, 0.644);}

@@ -1,0 +1,30 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: red;
+    text-decoration: underline black;
+    /* text-shadow: 2px 2px black; */
+}
+.a{
+    list-style-type: square;
+    background-color: hotpink;
+    padding: 20px 70px 20px;
+    /* list-style-position: inside; */ /* default is outside */
+}
+
+.a li{
+    background-color: lime;
+}
+
+ol{
+    background-color: rgb(77, 177, 211);
+    padding: 10px 40px 10px;
+}
+
+ol li{
+    color: rgb(10, 80, 4);
+    background-color: pink;
+    margin: 8px; /* for spacing between list items and definite color boundaries */
+}

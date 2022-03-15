@@ -1,0 +1,12 @@
+/* body{
+    background-image: url(media_css/lamborghini.jfif);
+    background-color: cyan;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+} */
+
+/* Shorthand Property */
+body{
+    background:cyan url(media_css/lamborghini.jfif) no-repeat top right fixed;
+}

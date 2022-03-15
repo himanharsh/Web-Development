@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index16</title>
+    <link rel="stylesheet" href="17_float.css">
+</head>
+<body>
+    <h2>Float Right</h2>
+    <p>In this example, the image will float to the right in the paragraph, and the text in the
+    paragraph will wrap around the image.</p>
+
+    <p> <img class="right" src="media_css/lion.jpg" alt="lion" width="200px" height="130px"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quas. Exercitationem nostrum
+    inventore doloribus voluptatibus quas possimus rerum totam obcaecati corrupti veniam. Perspiciatis
+    modi tenetur ipsam nisi, nulla nobis maiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita repellat provident doloremque, saepe maxime eligendi impedit sequi recusandae. Necessitatibus
+    nemo blanditiis quam aliquam soluta tempora odio, veritatis nihil sequi doloribus! Lorem Lorem Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Eum harum tempore error delectus rem? Animi,
+    laborum iusto praesentium quaerat voluptate, sequi officiis non aperiam magni perferendis commodi,
+    molestias provident consectetur.</p>
+
+    <br><br>
+
+    <h2>Float Left</h2>
+    <p> <img class="left" src="media_css/lion.jpg" alt="lion" width="200px" height="130px"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quas. Exercitationem nostrum
+    inventore doloribus voluptatibus quas possimus rerum totam obcaecati corrupti veniam. Perspiciatis
+    modi tenetur ipsam nisi, nulla nobis maiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita repellat provident doloremque, saepe maxime eligendi impedit sequi recusandae. Necessitatibus
+    nemo blanditiis quam aliquam soluta tempora odio, veritatis nihil sequi doloribus! Lorem Lorem Lorem
+    ipsum dolor sit amet consectetur, adipisicing elit. Eum harum tempore error delectus rem? Animi,
+    laborum iusto praesentium quaerat voluptate, sequi officiis non aperiam magni perferendis commodi,
+    molestias provident consectetur.</p>
+
+    <br><br><br>
+    <div class="one">
+        Div1
+    </div>
+    <div class="two">
+        Div2
+    </div>
+    <div class="three">
+        Div3
+    </div>
+
+    <h2 class="clear_left">Without clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to
+    the left, the text in div2 flows around div1.</div>
+    <br><br>
+
+    <h2>With clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left"
+    clears elements floated to the left. You can also clear "right" and "both".</div>
+    <!-- br will not shift it downwards as it is applied after the
+    text inside the above box, clear:left just separates it -->
+    <h2 style="clear: left;">Without Clearfix</h2>
+
+    <p>This image is floated to the right. It is also taller than the element containing it, so it
+    overflows outside of its container:</p>
+
+    <div class="tiger1">
+      <img class="img1" src="media_css/tiger.jpg" alt="tiger" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <!-- br will not shift it downwards as it is applied after the
+    text inside the above box, clear:left just separates it -->
+    <h2 style="clear:left">With Clearfix (br will not shift this heading downwards as it is applied after the
+        text inside the above box, clear:left just separates it)</h2>
+    <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+    <div class="clearfix">
+        <!-- working fine even without overflow : auto -->
+      <img class="img2" src="media_css/tiger.jpg" alt="tiger" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <!-- br will not shift it downwards as it is applied after the
+    text inside the above box, clear:left just separates it -->
+    <h2 style="clear: left;">Grid of Boxes (br will not shift this heading downwards as it is applied after the
+    text inside the above box, clear:left just separates it)</h2>
+    <p>Float boxes side by side:</p>
+
+    <div class="clearfix1">
+      <div class="box" style="background-color:#bbb">
+      <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color:#ccc">
+      <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color:#ddd">
+      <p>Some text inside the box.</p>
+      </div>
+    </div>
+
+    <p style="clear: left;"><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
+    We also use the box-sizing property to make sure that the box doesn't break due to extra padding.
+    Try to remove this code to see the effect.</p>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix2">
+      <div class="img-container">
+      <img src="media_css/desktop setup.jfif" alt="desktop" style="width:100%; height: 270px;">
+      </div>
+      <div class="img-container">
+      <img src="media_css/ferrari.jfif" alt="ferrari" style="width:100%; height: 270px;">
+      </div> <!-- width 100% for perfect adjustment -->
+      <div class="img-container">
+      <img src="media_css/lamborghini.jfif" alt="lamborghini" style="width:100%; height: 270px;">
+      </div>
+    </div>
+</body>
+</html>

@@ -77,5 +77,5 @@ body{
     padding: 1px;
     color: blue;
     margin-top: 40px;
-    background-color: rgb(216, 93, 93);
+    background: linear-gradient(35deg, #39bdbd, #e97575);
 }

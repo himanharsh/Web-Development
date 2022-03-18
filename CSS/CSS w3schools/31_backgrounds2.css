@@ -1,0 +1,6 @@
+html{ /* html tage covers the entire display */
+    background-image: url(media_css/desktop\ setup.jfif);
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

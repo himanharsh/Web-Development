@@ -1,0 +1,8 @@
+#ex1{
+    /* images are stacked on top of each other in the order of their declaration */
+    background-image: url(media_css/flower.gif), url(media_css/paper.gif);
+    background-position: right bottom, top left;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    height: 250px;
+}

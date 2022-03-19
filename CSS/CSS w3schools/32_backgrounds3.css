@@ -1,5 +1,22 @@
+body{
+    margin: 0;
+}
+
 .hero-img{
-    background-image: url(media_css/desktop\ setup.jfif);
-    background-position: center fixed;
-    height: 500px;
+    background-image: url(media_css/lamborghini.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    position: relative;
+}
+
+.hero-text{
+    position: absolute;
+    text-align: center;
+    font-size: x-large;
+    color: yellow;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

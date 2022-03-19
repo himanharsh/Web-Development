@@ -3,7 +3,9 @@ body{
 }
 
 .hero-img{
-    background-image: url(media_css/lamborghini.jfif);
+    /* In a background property you can add background-color, repeat, no-repeat and other image attributes,
+    but in the background-image property you are only allowed to add image. */
+    background: url(media_css/lamborghini.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +29,16 @@ body{
 
 h1, h3{
     text-shadow: 3px 3px darkslategray;
+}
+
+.content-box{
+    background: url(media_css/flower.gif) no-repeat;
+    background-origin: content-box; /*  the bg image starts from the upper left corner of the content */
+    border: 3px solid black;
+    padding: 35px;
+    font-size: large;
+    height: 180px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }

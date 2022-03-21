@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+div{
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin-right: 2px;
+}
+
+.cg1{
+    background: conic-gradient(red, yellow, green);
+}
+
+.rainbow{
+    background: conic-gradient(violet, indigo, blue, green, yellow, orange, red);
+}
+
+.cg2{
+    background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+.pie1{
+    background: conic-gradient(red, #0ff, lime, blue, black);
+    border-radius: 50%;
+}
+
+.pie2{
+    /* start and end point should be same for no gradient */
+    background: conic-gradient(green 0deg, green 90deg, #ff0 90deg, #ff0 180deg, red 180deg
+    , red 270deg, lime 270deg, lime 360deg);
+    border-radius: 50%;
+}
+
+.cg3{
+    /* from is for start angle (default is 180deg)*/
+    background: conic-gradient(from 90deg, red, magenta, blue, purple);
+    border-radius: 50%;
+}
+
+.cg4{
+    background: conic-gradient(at 60% 30% , red, green, blue); /* at (left, top) */
+    border-radius: 50%;
+}
+
+.repeat{
+    border-radius: 50%;
+    /* start angle and end angle */
+    background: repeating-conic-gradient(hotpink 0deg 20deg, skyblue 20deg 40deg, lime 40deg 60deg);
+}

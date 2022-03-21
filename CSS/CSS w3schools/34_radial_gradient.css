@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-size: large;
+}
+
+div{
+    height: 250px;
+}
+
+.rg1{
+    background: radial-gradient(yellow, orangered, red);
+}
+
+.rg2{
+    background: radial-gradient(yellow 5%, red 15%, blue 60%);
+}
+
+.circle{
+    background: radial-gradient(circle, yellow 10%, red 2%, rgb(61, 61, 168));
+    height: 730px;
+}
+
+
+/* repeating gradients are pretty difficult to understand */
+.repeating{
+    /* we need to specify the % of all the colors othewise it will be a simple radial gradient */
+    background: repeating-radial-gradient(red 10%, yellow 20%, green 30%);
+}

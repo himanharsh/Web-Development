@@ -1,3 +1,19 @@
-p1.test1{
-    
+p.test1{
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
+p.test2{
+    width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p.test1:hover, p.test2:hover{
+    overflow: visible;
 }

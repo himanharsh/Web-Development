@@ -3,7 +3,7 @@ p.test1{
     border: 1px solid black;
     overflow: hidden;
     text-overflow: clip;
-    white-space: nowrap;
+    white-space: nowrap; /* Text won't wrap to the next line */
 }
 
 p.test2{
@@ -11,7 +11,7 @@ p.test2{
     border: 1px solid black;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; /* Text won't never wrap to the next line */
 }
 
 p.test1:hover, p.test2:hover{

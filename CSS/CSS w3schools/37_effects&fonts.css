@@ -27,3 +27,7 @@ p.test3{
 p.test3:hover{
     word-wrap: normal;
 }
+
+#s1{
+    writing-mode:vertical-lr; /* all the other properties are almost same */ 
+}

@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+div.translate{
+    width: 50%;
+    height: 100px;
+    background-color: dodgerblue;
+    transform: translate(50px, 80px);
+}

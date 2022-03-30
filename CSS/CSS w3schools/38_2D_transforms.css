@@ -16,3 +16,9 @@ div.rotate{
     transform: rotate(20deg);
     /* transform: translate(50px, 100px); only one transform effect can be applied */
 }
+
+.skew{
+    transform: skew(30deg, 0deg);
+    display: flex;
+    justify-content: center;
+}

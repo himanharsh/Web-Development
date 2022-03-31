@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+div.translate{
+    width: 50%;
+    height: 100px;
+    background-color: dodgerblue;
+    transform: translate(20px, 50px);
+}
+
+div.rotate{
+    width: 50%;
+    height: 100px;
+    background-color: brown;
+    transform: rotate(20deg);
+    /* transform: translate(50px, 100px); only one transform effect can be applied */
+}
+
+.skew{
+    transform: skew(30deg, 0deg);
+    display: flex;
+    justify-content: center;
+}

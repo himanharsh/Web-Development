@@ -18,7 +18,7 @@
     height: 200px;
     background-color: blue;
     transition: width 1.5s, height 2s;
-    transition-timing-function: cubic-bezier(0,1,0.5,1);
+    transition-timing-function: cubic-bezier(0,1,0.5,1); /*(x1,y1,x2,y2) of speed graph, starting points are (0,0,1,1)*/
     /* learnt cubic-bezier from freecodecamp */
 }
 

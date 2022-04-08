@@ -1,0 +1,11 @@
+.redSquare{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 1.5s, height 2s;
+}
+
+.redSquare:hover{
+    width: 400px;
+    height: 400px;
+}
